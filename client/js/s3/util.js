@@ -366,7 +366,7 @@ qq.s3.util = qq.s3.util || (function() {
                 adjustedMaxSize = maxSize <= 0 ? 9007199254740992 : maxSize;
 
             if (minSize > 0 || maxSize > 0) {
-                policy.conditions.push(["content-length-range", adjustedMinSize.toString(), adjustedMaxSize.toString()]);
+                policy.conditions.push(["content-length-range", Math.round(adjustedMinSize), Math.round(adjustedMaxSize)]);
             }
         },
 
