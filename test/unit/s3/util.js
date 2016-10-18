@@ -46,6 +46,10 @@ describe("s3/util.js", function () {
                 "https://s3.amazonaws.com/foo_bar_com": "foo_bar_com",
                 "s3.amazonaws.com/foo_bar_com": "foo_bar_com",
 
+                "http://storage.googleapis.com/goo-bar": "goo-bar",
+                "https://storage.googleapis.com/goo-bar": "goo-bar",
+                "storage.googleapis.com/goo-bar": "goo-bar",
+
                 "http://foo.bar.com": "foo.bar.com",
                 "https://foo.bar.com": "foo.bar.com",
                 "foo.bar.com": "foo.bar.com",
